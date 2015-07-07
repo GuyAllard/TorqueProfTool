@@ -9,4 +9,5 @@ Finaly, a png image was generated using [graphviz](http://www.graphviz.org).
   
   
 ## Requirements
-[Python](http://www.python.org) (Tested with python 2.7.6)
+[Python](http://www.python.org) (Tested with python 2.7.6)  
+[gprof2dot](https://github.com/jrfonseca/gprof2dot) for conversion to other graph formats. This can be installed using `pip install gprof2dot`  
