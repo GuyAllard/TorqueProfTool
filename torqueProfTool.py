@@ -18,7 +18,7 @@
 
 from __future__ import print_function, division
 
-'''Visualize profiler output from the Torque3D game engine'''
+'''Convert profiler output from the Torque3D game engine into json format'''
 
 __author__ = "Guy Allard"
 
@@ -26,7 +26,6 @@ import sys
 import re
 import json
 import optparse
-import subprocess
 
 def consume( file_name ):
     """Iterator to read lines from file_name, stripping trailing control characters"""
@@ -144,7 +143,7 @@ def parse( file_name, root_function_name ):
                 'events':   [{'callchain' : cc, 'cost':[c]} for (cc,c) in events],
                 'metrics':  {'renders' : renders,
                              'ticks' : ticks,
-                             'framerate' : frame_rate,
+                             'max framerate' : frame_rate,
                              'catchups' : catch_ups}
               }
     
@@ -182,11 +181,7 @@ def main():
         print(key + ": " + str(value), file=sys.stderr)
     print("---------------------------------", file=sys.stderr)
         
-    # use gprof2dot to convert the callgraph (in json format) to .dot format
-    # then feed it to xdot for visualization
-    #xdot = subprocess.Popen(["xdot","-"], stdin=subprocess.PIPE)
-    #gprof2dot = subprocess.Popen(["gprof2dot", "-f", "json"], stdin=subprocess.PIPE, stdout=xdot.stdin)
-    #gprof2dot.communicate(json.dumps(profile))
+    # output the callgraph in json format
     print(json.dumps(profile, indent=2, separators=(',', ': ')))
     
     
