@@ -29,6 +29,6 @@ Options:
   -r ROOT_FUNC, --root=ROOT_FUNC                Name of function to use as the root node
   -o OUT_FILENAME, --output-file=OUT_FILENAME   Name of file to write output to
 ```
-
-To generate the above example graph
-`torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | dot -Tpng -o pacific.png'
+  
+To generate the above example graph  
+`torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | dot -Tpng -o pacific.png`
