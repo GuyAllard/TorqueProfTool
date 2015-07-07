@@ -30,5 +30,8 @@ Options:
   -o OUT_FILENAME, --output-file=OUT_FILENAME   Name of file to write output to
 ```
   
-To generate the above example graph  
-`torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | dot -Tpng -o pacific.png`
+To reproduce the example graph above as a png image named pacific.png  
+`torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | dot -Tpng -o pacific.png`  
+or alternatively, to use xdot for the visualization,  
+`torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | xdot -`  
+
