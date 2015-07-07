@@ -11,6 +11,6 @@ Examining the rendering branch in more detail by rooting the call graph at Scene
 [![Scene_renderObjects call graph](examples/pacific_Scene_renderObjects_thumb.png)](examples/pacific_Scene_renderObjects.png)  
 
 
-Examining the simulation branch in more detail by routing the call graph at ProcessTimeEvent, the Bullet physics were consuming almost 3/4 of the available simulation time.  
+Examining the simulation branch in more detail by routing the call graph at ProcessTimeEvent, the Bullet physics (BTWorls_TickPhysics) consumed almost 3/4 of the available simulation time.  
 [![ProcessTimeEvent call graph](examples/pacific_ProcessTimeEvent_thumb.png)](examples/pacific_ProcessTimeEvent.png)  
 
