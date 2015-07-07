@@ -6,13 +6,13 @@ This call-graph was generated from the profiler dump of the [Pacific demo scene]
   
   
 Two main branches are visible: the simulation branch, rooted at ProcessTimeEvent (~15% of the processor time), and the rendering branch, rooted at CanvasRenderControls (~85% of processor time).  
-[![pacific call graph](examples/pacific_full_thumb.png)](examples/pacific_full.png)  
+[![pacific call graph](examples/pacific_full_thumb.png)](examples/pacific_full.png?raw=true)  
   
   
 Examining the rendering branch in more detail by rooting the call graph at Scene_renderObjects, it can be seen that a large proportion of the processor time was spent in the subroutines responsible for forest rendering.  
-[![Scene_renderObjects call graph](examples/pacific_Scene_renderObjects_thumb.png)](examples/pacific_Scene_renderObjects.png)  
+[![Scene_renderObjects call graph](examples/pacific_Scene_renderObjects_thumb.png)](examples/pacific_Scene_renderObjects.png?raw=true)  
   
   
 Examining the simulation branch in more detail by rooting the call graph at ProcessTimeEvent, we can see that the Bullet physics (BTWorls_TickPhysics) consumed almost 3/4 of the available simulation time.  
-[![ProcessTimeEvent call graph](examples/pacific_ProcessTimeEvent_thumb.png)](examples/pacific_ProcessTimeEvent.png)  
+[![ProcessTimeEvent call graph](examples/pacific_ProcessTimeEvent_thumb.png)](examples/pacific_ProcessTimeEvent.png?raw=true)  
 
