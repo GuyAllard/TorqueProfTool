@@ -19,10 +19,11 @@ Finaly, a png image was generated using [graphviz](http://www.graphviz.org).
   
 ## Usage
 ```
-	torqueProfTool.py [options] [file] ...
+torqueProfTool.py [options] [file] ...
 
 Options:
   -h, --help                                    show the help message and exit
   -r ROOT_FUNC, --root=ROOT_FUNC                Name of function to use as the root node
   -o OUT_FILENAME, --output-file=OUT_FILENAME   Name of file to write output to
+```
 
