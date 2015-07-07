@@ -35,3 +35,4 @@ To reproduce the example graph above as a png image named pacific.png
 or alternatively, to use xdot for the visualization,  
 `torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | xdot -`  
 
+  
