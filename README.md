@@ -15,7 +15,10 @@ Finaly, a png image was generated using [graphviz](http://www.graphviz.org).
 [gprof2dot](https://github.com/jrfonseca/gprof2dot) for conversion to other graph formats.  
 [GraphViz](http://www.graphviz.org) to visualize the call graph.  
 [xdot](https://github.com/jrfonseca/xdot.py) for interactive visualization (requires [PyGTK](http://www.pygtk.org))  
-  
+### Installation
+either clone the repository using `git clone https://github.com/GuyAllard/TorqueProfTool`  
+or download [this zip](https://github.com/GuyAllard/TorqueProfTool/archive/master.zip) and extract to the desired location.  
+Add the TorqueProfTool directory to your systems PATH variable.
   
 ## Usage
 ```
@@ -27,3 +30,5 @@ Options:
   -o OUT_FILENAME, --output-file=OUT_FILENAME   Name of file to write output to
 ```
 
+To generate the above example graph
+`torqueProfTool.py profilerDumpToFile241587.txt | gprof2dot -f json | dot -Tpng -o pacific.png'
