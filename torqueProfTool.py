@@ -163,6 +163,11 @@ def main():
         '-r','--root',
         type="string", dest="root_func", default="",
         help="Name of function to use as the root node")
+    
+    optparser.add_option(
+        '-o', '--output-file',
+        type="string", dest="out_filename", default="",
+        help="Name of file to write output to")
         
     (options, args) = optparser.parse_args(sys.argv[1:])
     
@@ -182,7 +187,14 @@ def main():
     print("---------------------------------", file=sys.stderr)
         
     # output the callgraph in json format
-    print(json.dumps(profile, indent=2, separators=(',', ': ')))
+    out_file = sys.stdout
+    if options.out_filename <> "":
+        try:
+            out_file = open(options.out_filename, 'wt')
+        except IOError:
+            sys.exit("Could not open the output file")
+        
+    print(json.dumps(profile, indent=2, separators=(',', ': ')), file=out_file)
     
     
 
