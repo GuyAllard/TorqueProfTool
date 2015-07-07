@@ -9,5 +9,9 @@ Finaly, a png image was generated using [graphviz](http://www.graphviz.org).
   
   
 ## Requirements
-[Python](http://www.python.org) (Tested with python 2.7.6)  
-[gprof2dot](https://github.com/jrfonseca/gprof2dot) for conversion to other graph formats. This can be installed using `pip install gprof2dot`  
+[Python](http://www.python.org) (Tested with python 2.7.6)
+
+### Optional
+[gprof2dot](https://github.com/jrfonseca/gprof2dot) for conversion to other graph formats.
+[GraphViz](http://www.graphviz.org) to visualize the call graph.
+[xdot](https://github.com/jrfonseca/xdot.py) for interactive visualization (requires [PyGTK](http://www.pygtk.org))
