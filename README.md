@@ -13,9 +13,9 @@ In addition to the profile conversion, torqueProfTool also reports some key metr
 **max framerate** - an estimate of the maximum framerate during the profiled period  
 The following metrics were obtained from the profiler dump above:  
 ```
-catchups: 3343
 ticks: 3343
 renders: 3343
+catchups: 3343
 max framerate: 31.25
 ```
   
