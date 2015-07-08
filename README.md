@@ -8,12 +8,11 @@ TorqueProfTool was used to convert the profiler dump into json format which coul
   
 In addition to the profile conversion, torqueProfTool also reports some key metrics.  
 The following metrics were obtained from the profiler dump above:
-```------------METRICS--------------
+```
 catchups: 3343
 ticks: 3343
 renders: 3343
 max framerate: 31.25
----------------------------------
 ```
   
   
