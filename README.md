@@ -28,9 +28,9 @@ max framerate: 31.25
 [GraphViz](http://www.graphviz.org) to visualize the call graph.  
 [xdot](https://github.com/jrfonseca/xdot.py) for interactive visualization (requires [PyGTK](http://www.pygtk.org))  
 ### Installation
-either clone the repository using `git clone https://github.com/GuyAllard/TorqueProfTool`  
-or download [this zip](https://github.com/GuyAllard/TorqueProfTool/archive/master.zip) and extract to the desired location.  
-Add the TorqueProfTool directory to your systems PATH variable.
+Either clone the repository using `git clone https://github.com/GuyAllard/TorqueProfTool`  
+or download [this zip](https://github.com/GuyAllard/TorqueProfTool/archive/master.zip) and extract it to the desired location.  
+Add the TorqueProfTool directory to your system PATH variable.
   
 ## Usage
 ```
