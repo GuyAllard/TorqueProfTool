@@ -6,11 +6,11 @@ The following call-graph was generated from the profiler dump of the [Pacific de
 TorqueProfTool was used to convert the profiler dump into json format which could then be visualized using [gprof2dot](https://github.com/jrfonseca/gprof2dot) and [graphviz](http://www.graphviz.org).  
 [![pacific call graph](examples/pacific_full_thumb.png)](examples/pacific_full.png?raw=true)  
   
-In addition to the profile conversion, torqueProfTool also reports some key metrics:
-ticks         - the number of times that the simulation was ticked  
-renders       - the number of the times that the screen was re-drawn  
-catchups      - the number of times that the client simulation was not in sync with the server simulation  
-max framerate - an estimate of the maximum framerate during the profiled period  
+In addition to the profile conversion, torqueProfTool also reports some key metrics:  
+**ticks**         - the number of times that the simulation was ticked  
+**renders**       - the number of the times that the screen was re-drawn  
+**catchups**      - the number of times that the client simulation was not in sync with the server simulation  
+**max framerate** - an estimate of the maximum framerate during the profiled period  
 The following metrics were obtained from the profiler dump above:  
 ```
 catchups: 3343
