@@ -9,13 +9,11 @@ TorqueProfTool was used to convert the profiler dump into json format which coul
 In addition to the profile conversion, torqueProfTool also reports some key metrics:  
 **ticks**         - the number of times that the simulation was ticked  
 **renders**       - the number of the times that the screen was re-drawn  
-**catchups**      - the number of times that the client simulation was not in sync with the server simulation  
 **max framerate** - an estimate of the maximum framerate during the profiled period  
 The following metrics were obtained from the profiler dump above:  
 ```
 ticks: 3343
 renders: 3343
-catchups: 3343
 max framerate: 31.25
 ```
   
