@@ -74,7 +74,6 @@ def parse( file_name, root_function_name ):
     profile_block = 0   # the profile block currently being parsed
     renders = 0         # number of render events
     ticks = 0           # number of tick events
-    catch_ups = 0       # number of client catch up events
 
     for line in consume(file_name):
         # determine which profiler block we are parsing
@@ -104,8 +103,6 @@ def parse( file_name, root_function_name ):
                 renders = int(fields[4])
             elif "SceneGraph_scopeScene" in fields:
                 ticks = int(fields[4])
-            elif "ClientCatchup" in fields:
-                catch_ups = int(fields[4])
             continue
 
         # skip the function named "ROOT"
@@ -143,8 +140,7 @@ def parse( file_name, root_function_name ):
                 'events':   [{'callchain' : cc, 'cost':[c]} for (cc,c) in events],
                 'metrics':  {'renders' : renders,
                              'ticks' : ticks,
-                             'max framerate' : frame_rate,
-                             'catchups' : catch_ups}
+                             'max framerate' : frame_rate}
               }
     
     if len(profile['costs']) == 0 or len(profile['functions']) == 0 or \
